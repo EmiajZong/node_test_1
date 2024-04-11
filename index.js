@@ -4,7 +4,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
-const routes = require("./routes");
+// const routes = require("./routes");
 
 const port = process.env.PORT || 7581;
 
@@ -16,6 +16,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.use(routes);
+// app.use(routes);
 
 app.listen(port, () => console.log(`Running on http://localhost:${port}`));
